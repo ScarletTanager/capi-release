@@ -490,6 +490,7 @@ properties:
     description: "Used to grant scope for SSO clients for service brokers"
     default: "openid,cloud_controller_service_permissions.read"
 
+
   cc.install_buildpacks:
       description: "Set of buildpacks to install during deploy"
 
@@ -514,6 +515,14 @@ properties:
     description: "The file descriptors made available to each app instance"
     default: 16384
 
+  cc.bits_service.enabled:
+    description: "Enable integration of the bits-service incubator (experimental)"
+    default: false
+  cc.bits_service.endpoint:
+    description: "Location of the bits-service. e.g http://10.10.10.1"
+    default: ""
+
   cc.reserved_private_domains:
     description: "File location of a list of reserved private domains (for file format, see https://publicsuffix.org/)"
     default: ~
+

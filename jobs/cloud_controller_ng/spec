@@ -644,6 +644,13 @@ properties:
     description: "Whether to expose the routing_endpoint listed at /v2/info. Enable this after deploying the Routing API"
     default: false
 
+  cc.bits_service.enabled:
+    description: "Enable integration of the bits-service incubator (experimental)"
+    default: false
+  cc.bits_service.endpoint:
+    description: "Location of the bits-service. e.g http://10.10.10.1"
+    default: ""
+
   cc.reserved_private_domains:
     description: "File location of a list of reserved private domains (for file format, see https://publicsuffix.org/)"
     default: ~
@@ -668,3 +675,4 @@ properties:
   cc.security_event_logging.enabled:
     description: "Enable logging of all requests made to the Cloud Controller in CEF format."
     default: false
+
